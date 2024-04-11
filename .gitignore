@@ -1,7 +1,7 @@
 .idea/
 .vscode/
-.venv*/
-venv*/
+.fakepinterest*/
+fakepinterest*/
 __pycache__/
 dist/
 .coverage*
