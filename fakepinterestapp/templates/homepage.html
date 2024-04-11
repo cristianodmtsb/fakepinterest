@@ -11,7 +11,16 @@
     {% block body_content %}
     <h1>Homepage</h1>
 
-    <p><a href="perfil/cristiano">Entrar</a></p>
+    <form method="POST">
+      {{ form.csrf_token }}
+      {{form.email.label()}}
+      {{form.email()}}
+      {{form.password.label()}}
+      {{form.password()}}
+      {{form.confirm_buttom()}}
+    </form>
+
+    <p><a href="criarconta">Criar Conta</a></p>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
       dolores impedit ducimus laudantium! Laudantium officia, adipisci ullam
